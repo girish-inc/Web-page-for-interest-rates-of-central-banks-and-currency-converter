@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+	body{
+			background-image: url("dribble-perfect.gif");
+			background-size: 100%;
+
+	}
+
+
+
+	.card {
+ width: 300px;
+ height: 400px;
+ background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+ border-radius: 20px;
+ transition: all .3s;
+}
+
+.card2 {
+ width: 300px;
+ height: 400px;
+ background-color: #1a1a1a;
+ border-radius:;
+ transition: all .2s;
+}
+
+.card2:hover {
+ transform: scale(0.98);
+ border-radius: 20px;
+}
+
+.card:hover {
+ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 13rem;
+  height: 3rem;
+  background-size: 300% 300%;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: gradient_301 5s ease infinite;
+          animation: gradient_301 5s ease infinite;
+  border: double 4px transparent;
+  background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+#container-stars {
+  position: fixed;
+  top: -2px;
+  left: -3px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+}
+
+strong {
+  z-index: 2;
+  font-family: 'Avalors Personal Use';
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #FFFFFF;
+  text-shadow: 0 0 4px white;
+}
+
+#glow {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 12rem;
+}
+
+.circle {
+  width: 100%;
+  height: 30px;
+  -webkit-filter: blur(2rem);
+          filter: blur(2rem);
+  -webkit-animation: pulse_3011 4s infinite;
+          animation: pulse_3011 4s infinite;
+  z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+  background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+  background: rgba(142, 81, 234, 0.704);
+}
+
+.btn:hover #container-stars {
+  z-index: 1;
+  background-color: #212121;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1)
+}
+
+.btn:active {
+  border: double 4px #FE53BB;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  -webkit-animation: none;
+          animation: none;
+}
+
+.btn:active .circle {
+  background: #FE53BB;
+}
+
+#stars {
+  position: relative;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+
+#stars::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: -100rem;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: animStarRotate 90s linear infinite;
+          animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+  background-image: radial-gradient(#ffffff 1px, transparent 0%);
+  background-size: 50px 50px;
+}
+
+#stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  -webkit-animation: animStar 60s linear infinite;
+          animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+@-webkit-keyframes animStar {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateY(-135rem);
+            transform: translateY(-135rem);
+  }
+}
+
+@keyframes animStar {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateY(-135rem);
+            transform: translateY(-135rem);
+  }
+}
+
+@-webkit-keyframes animStarRotate {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes animStarRotate {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@-webkit-keyframes gradient_301 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient_301 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes pulse_3011 {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes pulse_3011 {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+
+    h1 {
+      font-size: 100px;
+      font-weight: bold;
+      text-align: center;
+      background: linear-gradient(45deg, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+      background-size: 400%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 10s ease infinite;
+    }
+    
+    @keyframes rainbow {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+	</style>
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<title>International Interest rates</title>
+</head>
+<body>
+
+	<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="C:\Users\giris\Desktop\javascript\test.html">Home</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="C:\Users\giris\Desktop\javascript\test.html" role="button" aria-expanded="false">Tools</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="test.html">Home</a></li>
+      <li><a class="dropdown-item" href="countryWithHighestInterestRate.html">Country with highest interest rates</a></li>
+      <li><a class="dropdown-item" href="countryWithLowestInterestRate.html">Country with lowest interest rates</a></li>
+      <li><a class="dropdown-item" href="cc2.html">Currency converter</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+</ul>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+ 
+ </script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+ </script>
+
+  <br><br><br>
+
+	<h1>Country with highest interest rate</h1>
+
+<div class="card" style="margin: auto; margin-top: 130px;">
+  <div class="card2" style=" text-align: center;">
+  		<form>
+  			<br><br><br>
+	<br><br>
+	<h5 style="color: gold;">Central Bank :- <span id = "central_bank" style="color: gold;"></span></h5>
+  <br>
+	<h5 style="color: gold;">Country :- <span id = "country" style="color: gold;" ></span></h5>
+  <br>
+	<h5 style="color: gold;">Interest Rate :- <span id = "rate" style="color: gold;"></span style="color: gold;">%<span></span></h5>
+<!--<button type="submit" class="btn" id="Highest-Interest-rate">
+  <strong>ENTER</strong>
+  <div id="container-stars">
+    <div id="stars"></div>
+  </div>
+  <div id="glow">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</button>
+-->
+
+	</form>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '666a652c5amsh1d5a60b385bd936p109a4ejsnf81df09ddb38',
+		'X-RapidAPI-Host': 'interest-rate-by-api-ninjas.p.rapidapi.com'
+	}
+};
+const interestRate = (a) =>{
+
+	fetch('https://interest-rate-by-api-ninjas.p.rapidapi.com/v1/interestrate', options)
+	.then(response => response.json())
+	.then(data =>{
+
+	 console.log(data);
+	 central_bank.innerHTML = data.central_bank_rates[a]["central_bank"];
+	 country.innerHTML = data.central_bank_rates[a]["country"];
+	 rate.innerHTML = data.central_bank_rates[a]["rate_pct"];
+
+	})
+
+	.catch(err => console.error(err));
+
+}
+
+	const highestInterestRate = document.getElementById('Highest-Interest-rate');
+
+	//highestInterestRate.addEventListener("click", (e) =>{
+		//e.preventDefault();	
+	 //interestRate(document.getElementById(4).value);
+	//});
+   interestRate(4);
+</script>
+</body>
+</html>
